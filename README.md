@@ -7,10 +7,14 @@ ColRead makes it simple to read long documents like in a printed newspaper.
 ColRead is made for QT, using PyQt, and written with help from Gemini and Copilot.
 
 ## Install (you will need QT5)
+```bash
 pip install .
+```
 
 ## Run
+```bash
 python3 main.py
+```
 
 ## Use
 Simply copy and pase from any program (e.g. a web browser or LibreOffice) into the window.
