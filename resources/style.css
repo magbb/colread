@@ -1,0 +1,47 @@
+:root {
+    --columns: 3;
+    --fontSize: 22px;
+    --fontFamily: Georgia, serif;
+}
+
+/* Basic page */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background: #fdf6e3;
+}
+
+/* Column layout */
+#wrapper {
+    height: 92vh;
+    margin-top: 4vh;
+    padding: 0 60px;
+
+    column-count: var(--columns);
+    column-gap: 70px;
+    column-rule: 1px solid #eee;
+
+    /* Fill columns sequentially */
+    column-fill: auto;
+
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    line-height: 1.7;
+    text-align: justify;
+    color: #000000;
+
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: break-word;
+
+    outline: none;
+}
+
+/* Images etc. */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    break-inside: avoid;
+}
